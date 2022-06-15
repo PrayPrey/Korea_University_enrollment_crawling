@@ -1,0 +1,61 @@
+2021-01-02 15:44:41 [scrapy.utils.log] INFO: Scrapy 2.4.0 started (bot: enrolment_3)
+2021-01-02 15:44:41 [scrapy.utils.log] INFO: Versions: lxml 4.4.1.0, libxml2 2.9.9, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 20.3.0, Python 3.7.4 (default, Aug  9 2019, 18:34:13) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1h  22 Sep 2020), cryptography 2.7, Platform Windows-10-10.0.19041-SP0
+2021-01-02 15:44:41 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2021-01-02 15:44:41 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'enrolment_3',
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'FEED_EXPORT_FIELDS': ['entire',
+                        'campus',
+                        'number',
+                        'class_',
+                        'seperate',
+                        'major',
+                        'class_name',
+                        'prof',
+                        'time',
+                        'place'],
+ 'LOG_FILE': 'log.txt',
+ 'NEWSPIDER_MODULE': 'enrolment_3.spiders',
+ 'SPIDER_MODULES': ['enrolment_3.spiders']}
+2021-01-02 15:44:41 [scrapy.extensions.telnet] INFO: Telnet Password: 939b325a7edfa24d
+2021-01-02 15:44:41 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2021-01-02 15:44:41 [twisted] CRITICAL: Unhandled error in Deferred:
+2021-01-02 15:44:42 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "D:\anaconda\lib\site-packages\selenium\webdriver\common\service.py", line 76, in start
+    stdin=PIPE)
+  File "D:\anaconda\lib\subprocess.py", line 775, in __init__
+    restore_signals, start_new_session)
+  File "D:\anaconda\lib\subprocess.py", line 1178, in _execute_child
+    startupinfo)
+FileNotFoundError: [WinError 2] 지정된 파일을 찾을 수 없습니다
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\anaconda\lib\site-packages\scrapy\crawler.py", line 86, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "D:\anaconda\lib\site-packages\scrapy\crawler.py", line 98, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "D:\anaconda\lib\site-packages\scrapy\spiders\__init__.py", line 50, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\USER\Documents\Jupyter Notebook\Python-crawling-advanced\scrapy\scrapyproject_2\enrolment_3\enrolment_3\spiders\korea_3.py", line 30, in __init__
+    self.driver = webdriver.Chrome(options = options)
+  File "D:\anaconda\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 73, in __init__
+    self.service.start()
+  File "D:\anaconda\lib\site-packages\selenium\webdriver\common\service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-04-09 23:30:39 [scrapy.utils.log] INFO: Scrapy 2.4.0 started (bot: enrolment_3)
+2021-04-09 23:30:39 [scrapy.utils.log] INFO: Versions: lxml 4.4.1.0, libxml2 2.9.9, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 20.3.0, Python 3.7.4 (default, Aug  9 2019, 18:34:13) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1h  22 Sep 2020), cryptography 2.7, Platform Windows-10-10.0.19041-SP0
+2021-04-09 23:30:39 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2021-04-09 23:30:44 [scrapy.utils.log] INFO: Scrapy 2.4.0 started (bot: enrolment_3)
+2021-04-09 23:30:44 [scrapy.utils.log] INFO: Versions: lxml 4.4.1.0, libxml2 2.9.9, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 20.3.0, Python 3.7.4 (default, Aug  9 2019, 18:34:13) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1h  22 Sep 2020), cryptography 2.7, Platform Windows-10-10.0.19041-SP0
+2021-04-09 23:30:44 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
